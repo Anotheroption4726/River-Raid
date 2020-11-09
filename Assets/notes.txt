@@ -1,37 +1,119 @@
-Types:
 
-	Scripting
-	Art-Modélisation
-	Audio-VFX
-	Design?
-	R&D (Recherche et développement)
-	Organisation
+River Raid (1982)
 
+Carol Shaw (3-D Tic-Tac-Toe, port de Super Breakout)
 
+Atari 2600 - Activision
 
-	Modéliser l'avion
-	Modéliser l'hélicoptère
+Génération procédurale du niveau:
+	In 1996, Next Generation listed the Atari 2600 version as number 81 on their "Top 100 Games of All Time", commenting that, "Nostalgia aside, the 2600 sucks. ... But this game is still great, for one main reason: Level design."
+
+River Raid II - 1988 - obscur, pas de succès et pas développé par Carol Shaw
 
 
+Présentation de l'équipe
+
+Impact mapping? Persona? Functional tree?
+
+Backlog: MoSCoW (Must, Should, Could, Would) Difficulté (1/2, 1, 2, 3, 5, 8, 12, 20, 40, 100)
+
+
+	Story 1 (difficulté: 1) : Comprendre le design général du jeu
+	Story 2 (difficulté: 140) : Génération Procédurale
+	Story 3 (difficulté: 40.5) : Architecture Logicielle du projet
+	Story 4 (difficulté: 58.5) : Modélisation des éléments graphiques du jeu
+	Story 5 (difficulté: 82) : Implémentation du gameplay et du game loop
+	Story 6 (difficulté: 44) : Implémentation de la sauvegarde et des checkpoints
+	Story 7 (difficulté: 19) : Implémentation d'animations
+	Story 8 (difficulté: 108) : Implémentation de particules et VFX
+	Story 9 (difficulté: 2) : Implémentation du son et des SFX
+	Story 10 (difficulté: 12) : Implémentation de l'HUD
+	Story 11 (difficulté: 24) : Implémentation des menus
+	Story 12 (difficulté: 3.5) : Tweaking et préparation pour la release
+	
+
+
+	Design-Organisation (Vert)
+		[Story 1] Trouver et installer un émulateur Atari 2600 ainsi qu'un fichier ROM pour tester le jeu (M - 1/2)
+		[Story 1] Bien comprendre et analyser les mécaniques de jeu et le game loop (M - 1/2)
+		[Story 2] Bien comprendre et analyser l'algorithme de génération procédurale (quasi-infinie) des niveaux (S - 40)
+		[Story 3] Bien comprendre et analyser le design pattern observer basé sur les événements (S - 40)
+		[Story 12] Ecrire fichier ReleaseNotes (S - 1)
+		[Story 12] Prendre quelques screenshots HD du jeu (S - 1/2)
+		[Story 12] Faire une video de walkthrough (S - 2)
+
+	3D Art (Rouge)
+		[Story 4] Modéliser l'avion joueur (M - 1)
+		[Story 4] Modéliser l'hélicoptère (M - 3)
+		[Story 4] Modéliser le jet (S - 2)
+		[Story 4] Modéliser le navire (M - 8)
+		[Story 4] Modéliser le projectile (M - 1/2)
+		[Story 4] Modéliser la maison (W - 3) 
+		[Story 4] Modéliser l'arbre (W - 2)
+		[Story 4] Modéliser le fuel pick up (M - 12)
+		[Story 4] Modéliser le mur (C - 2)
+		[Story 4] Modéliser le barrage (M - 5)
+
+	Développement-Scripting (Bleu)
+		[Story 3] Mettre en place le Git (M - 1/2)
+		[Story 5] Accélération et décélération de l'avion (M - 2)
+		[Story 5] Déplacement latéral de l'avion (M - 1/2)
+		[Story 5] IA/Déplacement des hélicoptères et des navires (M - 5)
+		[Story 5] IA/Déplacement des Jets (S - 1)
+		[Story 5] Tir de projectile (M - 2)
+		[Story 5] Déplacement de la caméra avec le joueur (M - 1/2)
+		[Story 3] Poser l'architecture du projet en design pattern observer basé sur les événements (S - 20)
+		[Story 5] Destruction des enemis et gestion du score (M - 3)
+		[Story 5] Destruction du joueur et gestion des vies (M - 3)
+		[Story 5] Faire en sorte que l'avion se crashe lorsqu'il n'est plus sur la rivière (S - 40)
+		[Story 5] Consommation et réapprovisionnement en fuel (S - 5)
+		[Story 2] Mettre en place l'algorithme de génération procedurale des niveaux (S - 100)
+		[Story 6] Mettre en place le système de checkpoints (S - 12)
+		[Story 6] Implémenter un système de sauvegarde de partie (C - 12)
+		[Story 6] Implémenter un système de leaderboard (C - 20)
+		[Story 12] Adapter le jeu sur plusieures résolutions d'écran (S - 8)
+		[Story 12] Implémenter God mode (joueur devient invincible) (W - 1/2)
+
+	Animation-VFX (Jaune)
+		[Story 7] Pivotement latéral de l'avion du joueur (C - 5)
+		[Story 7] Scroll de caméra en début de partie (W - 2)
+		[Story 7] Animer les hélicoptères (C - 12)
+		[Story 8] Effet de particules de crash du joueur (C - 12)
+		[Story 8] Effet de particules d'explosion d'enemi (C - 12)
+		[Story 8] Effet de particules d'explosion du navire (C - 12)
+		[Story 8] Effet de particules d'explosion du barrage (C - 12)
+		[Story 8] Clignotement de la rivière en rouge lorsqu'un barrage est detruit (C - 20)
+		[Story 8] Rajouter un shader au terrain aquatique (W - 40)
+
+	Audio (Orange)
+		[Story 9] Chercher sur le web des assets audio pour le jeu (C - 1)
+		[Story 9] Implémenter les assets audio dans le projet (C - 1)
+
+	2D Art (Violet)
+		[Story 4] Implémenter des terrains de base monochromes (rivière et herbe) (M - 20)
+		[Story 11] Ecran de défaite (W - 2)
+		[Story 11] Ecran de crédits (W - 2)
+		[Story 11] Ecran titre avec affichage de leaderboard (C - 20)
+		[Story 10] Affichage du score in game (M - 1)
+		[Story 10] Affichage de la barre de fuel in game (S - 8)
+		[Story 10] Affichage des vies restantes in game (M - 1)
+		[Story 10] Affichage du Copyright in game (W - 2)
+
+
+	
+
+
+
+
+	
 
 
 
 
 
-Modélisation:
-	Avion
-	Projectile
-
-
-Animation
-	Avion: pivotement latéral
 
 
 
-Design
-	Jouer et comprendre le jeu en émulateur
-	lire la page wiki du jeu
-	comprendre le système de génération procédurale des niveaux
 
 
 
