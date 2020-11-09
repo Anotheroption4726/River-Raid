@@ -1,9 +1,11 @@
 Types:
 
-	Developpement
-	Art
-	VFX
-	Audio
+	Développement
+	Art-Modélisation
+	Audio-VFX
+	Design?
+	R&D (Recherche et développement)
+	Organisation
 
 
 Modélisation:
