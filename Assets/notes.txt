@@ -1,0 +1,77 @@
+Types:
+
+	Developpement
+	Art
+	VFX
+	Audio
+
+
+Modélisation:
+	Avion
+	Projectile
+
+
+Animation
+	Avion: pivotement latéral
+
+
+
+Design
+	Jouer et comprendre le jeu en émulateur
+	lire la page wiki du jeu
+	comprendre le système de génération procédurale des niveaux
+
+
+
+un barrage marque la fin d'un niveau
+les barrages sont aussi des checkpoints. Si jamais le joueur fait un crash et qu'il a suffisament de vies, il recommence au dernier barrage qu'il a detruit
+
+
+For its time, River Raid provided an inordinate amount of non-random, repeating terrain despite constrictive computer memory limits. For the Atari 2600 the game with its program code and graphics had to fit into a 4 KB ROM.[3] The game program does not actually store the sequence of terrain and other objects. Instead, a procedural generation algorithm manifests them by employing a linear feedback shift register with a hard-coded starting value,[4] also called a pseudorandom number generator.[5] Because of this the algorithm generates the same game world every time the program executes.[6] The enemy crafts' AI relies on another pseudorandom number generator to make the start of the enemy movement less predictable as this pseudorandom number generator's starting value is not reset when a new game starts.
+
+
+Génération procédurale (quasi-infinie) des niveaux
+
+
+
+
+Game Elements
+	Avion (joueur)
+	projectile
+	Bateau
+	Helicoptère
+	Avion de chasse
+
+Environnement
+	Rivière
+	Grass
+	Arbres
+	Mur
+	Barrage
+	Fuel pick ups
+
+VFX
+	
+	clignotement rivière rouge
+	explosion avion joueur
+	explosion helicoptère/fuel
+	explosion navire
+
+UI
+	score (navire: 30 - helicoptère: 60 - fuel: 80 - jets: 100 - barrages: 500)
+	barre de fuel
+	vies
+	(Activision Copyright 1982)
+
+Audio
+	Bruit de moteur continu
+	Projectile
+	Collecte/remplissage de fuel
+	Explosion (barrage ou enemi)
+	Crash
+
+Mouvement
+	Bouger latéralement
+	Accélérer
+	Ralentir
+
