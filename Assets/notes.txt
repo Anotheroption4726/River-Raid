@@ -1,11 +1,21 @@
 Types:
 
-	Développement
+	Scripting
 	Art-Modélisation
 	Audio-VFX
 	Design?
 	R&D (Recherche et développement)
 	Organisation
+
+
+
+	Modéliser l'avion
+	Modéliser l'hélicoptère
+
+
+
+
+
 
 
 Modélisation:
