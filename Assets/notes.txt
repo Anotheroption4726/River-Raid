@@ -18,6 +18,18 @@
 	The game program does not actually store the sequence of terrain and other objects
 
 
+POST MORTEM
+
+	Tâches complétées
+		• Recherche et développement sur le jeu
+		• Mise en place du backlog
+		• Modélisation de l'avion joueur sous Blender terminée
+
+	Problèmes rencontrés
+		• Problème de gestion de temps (examen de mathématiques, rattrappage de cours)
+		• Planification des sprints pas faite
+
+
 
 
 
@@ -110,8 +122,8 @@ Backlog: MoSCoW (Must, Should, Could, Would) Difficulté (1/2, 1, 2, 3, 5, 8, 12
 
 
 	Design-Organisation (Vert)
-		[Story 1] Trouver et installer un émulateur Atari 2600 ainsi qu'un fichier ROM pour tester le jeu (M - 1/2)
-		[Story 1] Bien comprendre et analyser les mécaniques de jeu et le game loop (M - 1/2)
+		* [Story 1] Trouver et installer un émulateur Atari 2600 ainsi qu'un fichier ROM pour tester le jeu (M - 1/2)
+		* [Story 1] Bien comprendre et analyser les mécaniques de jeu et le game loop (M - 1/2)
 		[Story 2] Bien comprendre et analyser l'algorithme de génération procédurale (quasi-infinie) des niveaux (S - 40)
 		[Story 3] Bien comprendre et analyser le design pattern observer basé sur les événements (S - 40)
 		[Story 12] Ecrire fichier ReleaseNotes (S - 1)
@@ -119,11 +131,11 @@ Backlog: MoSCoW (Must, Should, Could, Would) Difficulté (1/2, 1, 2, 3, 5, 8, 12
 		[Story 12] Faire une video de walkthrough (S - 2)
 
 	3D Art (Rouge)
-		[Story 4] Modéliser l'avion joueur (M - 1)
+		* [Story 4] Modéliser l'avion joueur (M - 1)
 		[Story 4] Modéliser l'hélicoptère (M - 3)
 		[Story 4] Modéliser le jet (S - 2)
 		[Story 4] Modéliser le navire (M - 8)
-		[Story 4] Modéliser le projectile (M - 1/2)
+		* [Story 4] Modéliser le projectile (M - 1/2)
 		[Story 4] Modéliser la maison (W - 3) 
 		[Story 4] Modéliser l'arbre (W - 2)
 		[Story 4] Modéliser le fuel pick up (M - 12)
