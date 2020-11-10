@@ -1,29 +1,31 @@
 
-River Raid (1982)
+2 :
+	Carol Shaw. Ingénieure et développeuse informatique américaine. Considérée comme une des premières conceptrices de jeux vidéo
 
-Carol Shaw (3-D Tic-Tac-Toe, port de Super Breakout)
+3 :
+	Souffrant d'un manque de reconaissance, David Crane et d'autres membres fondent Activision
 
-Atari 2600 - Activision
+4 :
+	ColecoVision, Intellivision, Commodore 64, IBM PCjr, MSX, ZX Spectrum, Atari 5200
+	Suite: River Raid II (Atari 2600 aussi) - 1988 - obscur, pas de succès et pas développé par Carol Shaw
 
-Génération procédurale du niveau:
-	In 1996, Next Generation listed the Atari 2600 version as number 81 on their "Top 100 Games of All Time", commenting that, "Nostalgia aside, the 2600 sucks. ... But this game is still great, for one main reason: Level design."
+5 :
+	Salamander, Galaga
+	un barrage marque la fin d'un niveau (checkpoint). Si jamais le joueur fait un crash et qu'il a suffisament de vies, il recommence au dernier barrage qu'il a detruit
 
-	For its time, River Raid provided an inordinate amount of non-random, repeating terrain despite constrictive computer memory limits. For the Atari 2600 the game with its program code and graphics had to fit into a 4 KB ROM.[3] The game program does not actually store the sequence of terrain and other objects. Instead, a procedural generation algorithm manifests them by employing a linear feedback shift register with a hard-coded starting value,[4] also called a pseudorandom number generator.[5] Because of this the algorithm generates the same game world every time the program executes.[6] The enemy crafts' AI relies on another pseudorandom number generator to make the start of the enemy movement less predictable as this pseudorandom number generator's starting value is not reset when a new game starts.
-
-
-Génération procédurale (quasi-infinie) des niveaux
-
-
-Jeu: score, fuel, vies
-
-un barrage marque la fin d'un niveau
-les barrages sont aussi des checkpoints. Si jamais le joueur fait un crash et qu'il a suffisament de vies, il recommence au dernier barrage qu'il a detruit
+6 :
+	For its time, River Raid provided an inordinate amount of non-random, repeating terrain despite constrictive computer memory limits. For the Atari 2600 the game with its program code and graphics had to fit into a 4 KB ROM.
+	The game program does not actually store the sequence of terrain and other objects
 
 
-River Raid II - 1988 - obscur, pas de succès et pas développé par Carol Shaw
 
 
-Présentation de l'équipe
+
+
+
+
+
+
 
 
 
@@ -78,7 +80,7 @@ Backlog: MoSCoW (Must, Should, Could, Would) Difficulté (1/2, 1, 2, 3, 5, 8, 12
 	Story 8 (difficulté: 108 - priorité: C) : Implémentation de particules et VFX
 		En tant que joueur
 		Je veux voir des explosions lorsque je touche un enemi
-		Afin d'avoir un feedback visuel clair et des actions que j'entreprends
+		Afin d'avoir un feedback visuel clair des actions que j'entreprends
 
 
 	Story 9 (difficulté: 2 - priorité: S) : Implémentation du son et des SFX
