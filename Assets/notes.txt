@@ -8,28 +8,102 @@ Atari 2600 - Activision
 Génération procédurale du niveau:
 	In 1996, Next Generation listed the Atari 2600 version as number 81 on their "Top 100 Games of All Time", commenting that, "Nostalgia aside, the 2600 sucks. ... But this game is still great, for one main reason: Level design."
 
+	For its time, River Raid provided an inordinate amount of non-random, repeating terrain despite constrictive computer memory limits. For the Atari 2600 the game with its program code and graphics had to fit into a 4 KB ROM.[3] The game program does not actually store the sequence of terrain and other objects. Instead, a procedural generation algorithm manifests them by employing a linear feedback shift register with a hard-coded starting value,[4] also called a pseudorandom number generator.[5] Because of this the algorithm generates the same game world every time the program executes.[6] The enemy crafts' AI relies on another pseudorandom number generator to make the start of the enemy movement less predictable as this pseudorandom number generator's starting value is not reset when a new game starts.
+
+
+Génération procédurale (quasi-infinie) des niveaux
+
+
+Jeu: score, fuel, vies
+
+un barrage marque la fin d'un niveau
+les barrages sont aussi des checkpoints. Si jamais le joueur fait un crash et qu'il a suffisament de vies, il recommence au dernier barrage qu'il a detruit
+
+
 River Raid II - 1988 - obscur, pas de succès et pas développé par Carol Shaw
 
 
 Présentation de l'équipe
 
-Impact mapping? Persona? Functional tree?
+
+
+
+
 
 Backlog: MoSCoW (Must, Should, Could, Would) Difficulté (1/2, 1, 2, 3, 5, 8, 12, 20, 40, 100)
 
 
-	Story 1 (difficulté: 1) : Comprendre le design général du jeu
-	Story 2 (difficulté: 140) : Génération Procédurale
-	Story 3 (difficulté: 40.5) : Architecture Logicielle du projet
-	Story 4 (difficulté: 58.5) : Modélisation des éléments graphiques du jeu
-	Story 5 (difficulté: 82) : Implémentation du gameplay et du game loop
-	Story 6 (difficulté: 44) : Implémentation de la sauvegarde et des checkpoints
-	Story 7 (difficulté: 19) : Implémentation d'animations
-	Story 8 (difficulté: 108) : Implémentation de particules et VFX
-	Story 9 (difficulté: 2) : Implémentation du son et des SFX
-	Story 10 (difficulté: 12) : Implémentation de l'HUD
-	Story 11 (difficulté: 24) : Implémentation des menus
-	Story 12 (difficulté: 3.5) : Tweaking et préparation pour la release
+	Story 1 (difficulté: 1 - priorité: M) : Comprendre le design général du jeu
+		En tant que designer
+		Je veux comprendre la façon dont se déroule une partie
+		Afin de pouvoir reproduire le game loop et les mécaniques de base du jeu
+
+
+	Story 2 (difficulté: 140 - priorité: S) : Génération Procédurale
+		En tant que développeur
+		Je veux pouvoir générer procéduralement les niveaux
+		Afin d'optimiser l'espace mémoire et proposer une expérience de jeu quasi infinie
+
+
+	Story 3 (difficulté: 40.5 - priorité: S) : Architecture Logicielle du projet
+		En tant que développeur
+		Je veux bien organiser mon code
+		Afin de ne pas avoir à le réécrire plus tard si jamais je souhaite rajouter des nouvelles fonctionnalités
+
+
+	Story 4 (difficulté: 58.5 - priorité: M) : Modélisation des éléments graphiques du jeu
+		En tant que joueur
+		Je veux pouvoir reconnaitre facilement les différents éléments présents dans le jeu
+		Afin d'avoir une expérience agréable et pouvoir m'engager dans une partie rapidement
+
+
+	Story 5 (difficulté: 82 - priorité: M) : Implémentation du gameplay et du game loop
+		En tant que joueur
+		Je veux pouvoir déplacer mon avion et tirer sur des enemis
+		Afin d'entreprendre d'une partie et chercher à augmenter mon score
+
+
+	Story 6 (difficulté: 44 - priorité: S) : Implémentation de la sauvegarde et des checkpoints
+		En tant que joueur
+		Je veux pouvoir sauvegarder le progrès d'une partie
+		Afin de pouvoir rétablir mon ancien score score même après avoir quitté le jeu
+
+
+	Story 7 (difficulté: 19 - priorité: W) : Implémentation d'animations
+		En tant que joueur
+		Je veux que les éléments du jeu ne restent pas statiques
+		Afin de rendre mon expérience de jeu visuellement plus agréable
+
+
+	Story 8 (difficulté: 108 - priorité: C) : Implémentation de particules et VFX
+		En tant que joueur
+		Je veux voir des explosions lorsque je touche un enemi
+		Afin d'avoir un feedback visuel clair et des actions que j'entreprends
+
+
+	Story 9 (difficulté: 2 - priorité: S) : Implémentation du son et des SFX
+		En tant que joueur
+		Je veux entendre les différents éléments et intéractions du jeu
+		Afin d'avoir un feedback auditif clair de mes actions
+
+
+	Story 10 (difficulté: 12 - priorité: M) : Implémentation de l'HUD
+		En tant que joueur
+		Je veux pouvoir voir mon score, mon niveau de fuel et mes vies restantes
+		Afin de connaitre le statut de la partie en cours
+
+
+	Story 11 (difficulté: 24 - priorité: S) : Implémentation des menus
+		En tant que joueur
+		Je veux pouvoir
+		Afin de
+
+
+	Story 12 (difficulté: 3.5 - priorité: S) : Tweaking et préparation pour la release
+		En tant que project manager
+		Je veux que
+		Afin de
+
 	
 
 
@@ -77,22 +151,22 @@ Backlog: MoSCoW (Must, Should, Could, Would) Difficulté (1/2, 1, 2, 3, 5, 8, 12
 	Animation-VFX (Jaune)
 		[Story 7] Pivotement latéral de l'avion du joueur (C - 5)
 		[Story 7] Scroll de caméra en début de partie (W - 2)
-		[Story 7] Animer les hélicoptères (C - 12)
+		[Story 7] Animer les hélicoptères (W - 12)
 		[Story 8] Effet de particules de crash du joueur (C - 12)
-		[Story 8] Effet de particules d'explosion d'enemi (C - 12)
-		[Story 8] Effet de particules d'explosion du navire (C - 12)
-		[Story 8] Effet de particules d'explosion du barrage (C - 12)
+		[Story 8] Effet de particules d'explosion d'enemi (W - 12)
+		[Story 8] Effet de particules d'explosion du navire (W - 12)
+		[Story 8] Effet de particules d'explosion du barrage (W - 12)
 		[Story 8] Clignotement de la rivière en rouge lorsqu'un barrage est detruit (C - 20)
 		[Story 8] Rajouter un shader au terrain aquatique (W - 40)
 
 	Audio (Orange)
-		[Story 9] Chercher sur le web des assets audio pour le jeu (C - 1)
-		[Story 9] Implémenter les assets audio dans le projet (C - 1)
+		[Story 9] Chercher sur le web des assets audio pour le jeu (S - 1)
+		[Story 9] Implémenter les assets audio dans le projet (S - 1)
 
 	2D Art (Violet)
 		[Story 4] Implémenter des terrains de base monochromes (rivière et herbe) (M - 20)
-		[Story 11] Ecran de défaite (W - 2)
-		[Story 11] Ecran de crédits (W - 2)
+		[Story 11] Ecran de défaite (S - 2)
+		[Story 11] Ecran de crédits (S - 2)
 		[Story 11] Ecran titre avec affichage de leaderboard (C - 20)
 		[Story 10] Affichage du score in game (M - 1)
 		[Story 10] Affichage de la barre de fuel in game (S - 8)
@@ -117,14 +191,10 @@ Backlog: MoSCoW (Must, Should, Could, Would) Difficulté (1/2, 1, 2, 3, 5, 8, 12
 
 
 
-un barrage marque la fin d'un niveau
-les barrages sont aussi des checkpoints. Si jamais le joueur fait un crash et qu'il a suffisament de vies, il recommence au dernier barrage qu'il a detruit
 
 
-For its time, River Raid provided an inordinate amount of non-random, repeating terrain despite constrictive computer memory limits. For the Atari 2600 the game with its program code and graphics had to fit into a 4 KB ROM.[3] The game program does not actually store the sequence of terrain and other objects. Instead, a procedural generation algorithm manifests them by employing a linear feedback shift register with a hard-coded starting value,[4] also called a pseudorandom number generator.[5] Because of this the algorithm generates the same game world every time the program executes.[6] The enemy crafts' AI relies on another pseudorandom number generator to make the start of the enemy movement less predictable as this pseudorandom number generator's starting value is not reset when a new game starts.
 
 
-Génération procédurale (quasi-infinie) des niveaux
 
 
 
