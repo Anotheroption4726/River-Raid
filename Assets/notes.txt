@@ -95,14 +95,14 @@ Backlog: MoSCoW (Must, Should, Could, Would) Difficulté (1/2, 1, 2, 3, 5, 8, 12
 
 	Story 11 (difficulté: 24 - priorité: S) : Implémentation des menus
 		En tant que joueur
-		Je veux pouvoir
-		Afin de
+		Je veux pouvoir accéder à des menus de jeu
+		Afin d'avoir la possibilité de garder le jeu en pause entre sessions ainsi que d'avoir des informations sur mon progrès général
 
 
 	Story 12 (difficulté: 3.5 - priorité: S) : Tweaking et préparation pour la release
 		En tant que project manager
-		Je veux que
-		Afin de
+		Je veux que le PO puisse bien comprendre ce qui a été produit
+		Afin de valider la release et pouvoir continuer le développement du projet
 
 	
 
